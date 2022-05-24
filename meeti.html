@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <a href="index.html">
+                <picture>
+                    <source srcset="./build/img/logo.avif" type="image/avif"/>
+                    <source srcset="./build/img/logo.webp" type="image/webp"/>
+                    <img loading="lazy" decoding="async" src="./build/img/logo.png" lazyalt="imágen logo" />
+                </picture>
+            </a>
+        </div>
+        <nav class="navegacion">
+            <a class="navegacion__enlace navegacion__enlace--crear" href="#">Crear Grupo</a>
+            <a class="navegacion__enlace" href="#">Iniciar Sesión</a>
+            <a class="navegacion__enlace" href="#">Registrarse</a>
+            <a class="navegacion__enlace" href="./meeti.html">Calendario</a>
+        </nav>
+    </header>
+    <main class="meeti contenedor">
+        <h2 class="meeti__heading">Headless WordPress con Next.js </h2>
+        <div class="meeti__grid">
+            <picture class="meeti__imagen-contenedor">
+                <source class="meeti__imagen" srcset="./build/img/meeti.avif" type="image/avif"/>
+                <source class="meeti__imagen" srcset="./build/img/meeti.webp" type="image/webp"/>
+                <img  class="meeti__imagen" loading="lazy" decoding="async" src="./build/img/meeti.jpg" lazyalt="imágen meeti" />
+            </picture>
+            <div class="meeti__texto">
+                <p class="meeti__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa modi officiis laudantium consequuntur vitae quod ex iure a esse autem minus, culpa unde cupiditate aut amet impedit repellendus accusamus in.</p>
+                <p class="meeti__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa modi officiis laudantium consequuntur vitae quod ex iure a esse autem minus, culpa unde cupiditate aut amet impedit repellendus accusamus in.</p>
+            </div>
+            <aside class="sidebar">
+                <picture>
+                    <source class="sidebar__imagen" srcset="./build/img/mapa.avif" type="image/avif"/>
+                    <source class="sidebar__imagen" srcset="./build/img/mapa..webp" type="image/webp"/>
+                    <img  class="sidebar__imagen" loading="lazy" decoding="async" src="./build/img/mapa..jpg" lazyalt="imágen mapa" />
+                </picture>
+                <div class="sidebar__informacion">
+                    <h3 class="sidebar__heading">Información Meeti</h3>
+                    <p class="sidebar__texto"><span>Fecha:</span> 30 diciembre 2022</p>
+                    <p class="sidebar__texto"><span>Hora:</span> 8: 30 pm</p>
+                    <p class="sidebar__texto">Bulevar del Rio - Cali</p>
+                </div>
+            </aside>
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion contenedor">
+            <a class="navegacion__enlace navegacion__enlace--crear" href="#">Crear Grupo</a>
+            <a class="navegacion__enlace" href="#">Iniciar Sesión</a>
+            <a class="navegacion__enlace" href="#">Registrarse</a>
+            <a class="navegacion__enlace" href="./meeti.html">Calendario</a>
+        </nav>
+        <div class="footer__copyright">Todos los Derechos Reservados. Meeti</div>
+    </footer>
+</body>
+</html>

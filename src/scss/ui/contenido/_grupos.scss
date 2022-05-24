@@ -1,0 +1,33 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.grupos {
+    background-image: linear-gradient(to bottom, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+    @include m.tablet { 
+        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+    }
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        @include m.tablet { 
+            @include m.grid(2, 3rem);
+        }
+    }
+}
+
+.grupo {
+   
+    &__bloque {
+        padding: 2rem 0;
+        
+    }
+    &__heading {
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+    &__texto {
+        color: v.$blanco;
+        font-size: 1.8rem;
+    }
+}

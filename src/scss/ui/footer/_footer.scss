@@ -1,0 +1,23 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.footer {
+    background-color: v.$grisClaro;
+    &__copyright {
+        color: v.$gris;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+    .navegacion {
+        padding: 3rem 0;
+
+        &__enlace--crear {
+            &::after {
+                border-right: 2px solid v.$gris;
+            }
+        }
+        
+    }
+}

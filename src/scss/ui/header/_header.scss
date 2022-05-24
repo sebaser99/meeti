@@ -1,0 +1,16 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header {
+    padding: 2rem 0;
+    @include m.tablet { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
